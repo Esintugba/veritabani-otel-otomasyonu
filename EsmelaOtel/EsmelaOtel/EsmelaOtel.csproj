@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2AC5EBA-E2C0-4FC5-89D8-5E90A952FA76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EsmelaOtel</RootNamespace>
+    <AssemblyName>EsmelaOtel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa1.Designer.cs">
+      <DependentUpon>AnaSayfa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anasayfa2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa2.Designer.cs">
+      <DependentUpon>Anasayfa2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBOtelOtomasyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBOtelOtomasyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBOtelOtomasyonDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBOtelOtomasyonDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBOtelOtomasyonDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBOtelOtomasyonDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBOtelOtomasyonDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBOtelOtomasyonDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBOtelOtomasyonDataSetMsteri.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBOtelOtomasyonDataSetMsteri.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBOtelOtomasyonDataSetmusteri.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBOtelOtomasyonDataSetmusteri.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBOtelOtomasyonDataSetMusteriGuncelleme.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBOtelOtomasyonDataSetMusteriGuncelleme.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBOtelOtomasyonDataSetMusteriY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBOtelOtomasyonDataSetMusteriY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBOtelOtomasyonDataSetPersonel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBOtelOtomasyonDataSetPersonel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBOtelOtomasyonDataSetPersonelY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBOtelOtomasyonDataSetPersonelY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBOtelOtomasyonDataSetYonetici.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBOtelOtomasyonDataSetYonetici.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GiderGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiderGuncelle.Designer.cs">
+      <DependentUpon>GiderGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giderler.Designer.cs">
+      <DependentUpon>Giderler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giderİstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giderİstatistik.Designer.cs">
+      <DependentUpon>Giderİstatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JuniorSuit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JuniorSuit.Designer.cs">
+      <DependentUpon>JuniorSuit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JuniorSuiteKingBed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JuniorSuiteKingBed.Designer.cs">
+      <DependentUpon>JuniorSuiteKingBed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriGuncelleme.Designer.cs">
+      <DependentUpon>MusteriGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriKayit.Designer.cs">
+      <DependentUpon>MusteriKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriGiris.Designer.cs">
+      <DependentUpon>MusteriGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriRezervasyon.Designer.cs">
+      <DependentUpon>MusteriRezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdaBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaBilgi.Designer.cs">
+      <DependentUpon>OdaBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odalar.Designer.cs">
+      <DependentUpon>Odalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odalargecis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odalargecis.Designer.cs">
+      <DependentUpon>Odalargecis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtelBilgisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtelBilgisi.Designer.cs">
+      <DependentUpon>OtelBilgisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otelfoto1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otelfoto1.Designer.cs">
+      <DependentUpon>Otelfoto1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtelFoto2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtelFoto2.Designer.cs">
+      <DependentUpon>OtelFoto2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtelFoto3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtelFoto3.Designer.cs">
+      <DependentUpon>OtelFoto3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtelFoto4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtelFoto4.Designer.cs">
+      <DependentUpon>OtelFoto4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelEkrani.Designer.cs">
+      <DependentUpon>PersonelEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelGiris.Designer.cs">
+      <DependentUpon>PersonelGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelKayit.Designer.cs">
+      <DependentUpon>PersonelKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlBaglantisi.cs" />
+    <Compile Include="StandartOda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StandartOda.Designer.cs">
+      <DependentUpon>StandartOda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuiteKingBed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuiteKingBed.Designer.cs">
+      <DependentUpon>SuiteKingBed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TwinOda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwinOda.Designer.cs">
+      <DependentUpon>TwinOda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiEkrani.Designer.cs">
+      <DependentUpon>YoneticiEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiKayit.Designer.cs">
+      <DependentUpon>YoneticiKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiGiris.Designer.cs">
+      <DependentUpon>YoneticiGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÖdemeKredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÖdemeKredi.Designer.cs">
+      <DependentUpon>ÖdemeKredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÖdemeNakit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÖdemeNakit.Designer.cs">
+      <DependentUpon>ÖdemeNakit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaSayfa1.resx">
+      <DependentUpon>AnaSayfa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anasayfa2.resx">
+      <DependentUpon>Anasayfa2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiderGuncelle.resx">
+      <DependentUpon>GiderGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giderler.resx">
+      <DependentUpon>Giderler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giderİstatistik.resx">
+      <DependentUpon>Giderİstatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JuniorSuit.resx">
+      <DependentUpon>JuniorSuit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JuniorSuiteKingBed.resx">
+      <DependentUpon>JuniorSuiteKingBed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriGuncelleme.resx">
+      <DependentUpon>MusteriGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriKayit.resx">
+      <DependentUpon>MusteriKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriGiris.resx">
+      <DependentUpon>MusteriGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriRezervasyon.resx">
+      <DependentUpon>MusteriRezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaBilgi.resx">
+      <DependentUpon>OdaBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odalar.resx">
+      <DependentUpon>Odalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odalargecis.resx">
+      <DependentUpon>Odalargecis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtelBilgisi.resx">
+      <DependentUpon>OtelBilgisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otelfoto1.resx">
+      <DependentUpon>Otelfoto1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtelFoto2.resx">
+      <DependentUpon>OtelFoto2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtelFoto3.resx">
+      <DependentUpon>OtelFoto3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtelFoto4.resx">
+      <DependentUpon>OtelFoto4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelEkrani.resx">
+      <DependentUpon>PersonelEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelGiris.resx">
+      <DependentUpon>PersonelGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelKayit.resx">
+      <DependentUpon>PersonelKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="StandartOda.resx">
+      <DependentUpon>StandartOda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuiteKingBed.resx">
+      <DependentUpon>SuiteKingBed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TwinOda.resx">
+      <DependentUpon>TwinOda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiEkrani.resx">
+      <DependentUpon>YoneticiEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiKayit.resx">
+      <DependentUpon>YoneticiKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiGiris.resx">
+      <DependentUpon>YoneticiGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÖdemeKredi.resx">
+      <DependentUpon>ÖdemeKredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÖdemeNakit.resx">
+      <DependentUpon>ÖdemeNakit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DBOtelOtomasyonDataSet.xsc">
+      <DependentUpon>DBOtelOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBOtelOtomasyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBOtelOtomasyonDataSet.xss">
+      <DependentUpon>DBOtelOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSet1.xsc">
+      <DependentUpon>DBOtelOtomasyonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBOtelOtomasyonDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBOtelOtomasyonDataSet1.xss">
+      <DependentUpon>DBOtelOtomasyonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSet2.xsc">
+      <DependentUpon>DBOtelOtomasyonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBOtelOtomasyonDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBOtelOtomasyonDataSet2.xss">
+      <DependentUpon>DBOtelOtomasyonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSet3.xsc">
+      <DependentUpon>DBOtelOtomasyonDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBOtelOtomasyonDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBOtelOtomasyonDataSet3.xss">
+      <DependentUpon>DBOtelOtomasyonDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetMsteri.xsc">
+      <DependentUpon>DBOtelOtomasyonDataSetMsteri.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetMsteri.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBOtelOtomasyonDataSetMsteri.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetMsteri.xss">
+      <DependentUpon>DBOtelOtomasyonDataSetMsteri.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetmusteri.xsc">
+      <DependentUpon>DBOtelOtomasyonDataSetmusteri.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetmusteri.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBOtelOtomasyonDataSetmusteri.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetmusteri.xss">
+      <DependentUpon>DBOtelOtomasyonDataSetmusteri.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetMusteriGuncelleme.xsc">
+      <DependentUpon>DBOtelOtomasyonDataSetMusteriGuncelleme.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetMusteriGuncelleme.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBOtelOtomasyonDataSetMusteriGuncelleme.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetMusteriGuncelleme.xss">
+      <DependentUpon>DBOtelOtomasyonDataSetMusteriGuncelleme.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetMusteriY.xsc">
+      <DependentUpon>DBOtelOtomasyonDataSetMusteriY.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetMusteriY.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBOtelOtomasyonDataSetMusteriY.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetMusteriY.xss">
+      <DependentUpon>DBOtelOtomasyonDataSetMusteriY.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetPersonel.xsc">
+      <DependentUpon>DBOtelOtomasyonDataSetPersonel.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetPersonel.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBOtelOtomasyonDataSetPersonel.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetPersonel.xss">
+      <DependentUpon>DBOtelOtomasyonDataSetPersonel.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetPersonelY.xsc">
+      <DependentUpon>DBOtelOtomasyonDataSetPersonelY.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetPersonelY.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBOtelOtomasyonDataSetPersonelY.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetPersonelY.xss">
+      <DependentUpon>DBOtelOtomasyonDataSetPersonelY.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetYonetici.xsc">
+      <DependentUpon>DBOtelOtomasyonDataSetYonetici.xsd</DependentUpon>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetYonetici.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBOtelOtomasyonDataSetYonetici.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBOtelOtomasyonDataSetYonetici.xss">
+      <DependentUpon>DBOtelOtomasyonDataSetYonetici.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
